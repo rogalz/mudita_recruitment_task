@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="sh.surge.jakub.muditarecruitmenttask.frsplash.SplashFragment"
+        android:name="sh.surge.jakub.muditarecruitmenttask.splashfragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash">
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="sh.surge.jakub.muditarecruitmenttask.frcountrieslist.ListFragment"
+        android:name="sh.surge.jakub.muditarecruitmenttask.countrieslistfragment.ListFragment"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" />
 </navigation>

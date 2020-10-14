@@ -9,8 +9,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/smallSpace"
-        android:textSize="@dimen/theLargestTextSize"
         android:text="@string/splashAppName"
+        android:textSize="@dimen/theLargestTextSize"
         app:layout_constraintBottom_toTopOf="@id/iconSplash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,9 +22,9 @@
         android:layout_height="0dp"
         android:padding="@dimen/smallSpace"
         android:src="@drawable/splash_map"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="624:468"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:tint="@color/white" />
 
     <TextView
