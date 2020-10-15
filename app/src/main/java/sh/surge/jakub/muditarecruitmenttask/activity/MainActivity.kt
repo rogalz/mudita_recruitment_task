@@ -24,17 +24,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setNavController()
-
-        testNavigation()
-    }
-
-    private fun testNavigation() {
-        GlobalScope.launch {//test
-            delay(2000)
-            withContext(Dispatchers.Main) {
-                navController.navigate(R.id.action_splashFragment_to_listFragment)
-            }
-        }
     }
 
     private fun setNavController() {
@@ -54,4 +43,13 @@ class MainActivity : AppCompatActivity() {
     private fun hideStatusBar() = window.addFlags(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
 
     private fun showStatusBar() = window.clearFlags(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
+
+    fun closeSplash() {
+        GlobalScope.launch {
+            delay(2000)
+            withContext(Dispatchers.Main) {
+                navController.navigate(R.id.action_splashFragment_to_listFragment)
+            }
+        }
+    }
 }

@@ -6,6 +6,7 @@ import dagger.Module
 import dagger.Provides
 import sh.surge.jakub.muditarecruitmenttask.repo.MainRepository
 import sh.surge.jakub.muditarecruitmenttask.repo.database.CountriesDatabase
+import sh.surge.jakub.muditarecruitmenttask.repo.network.ApiCallWrapper
 import sh.surge.jakub.muditarecruitmenttask.repo.network.ApiService
 import sh.surge.jakub.muditarecruitmenttask.repo.network.RetrofitInstance
 import sh.surge.jakub.muditarecruitmenttask.utils.Const
@@ -20,7 +21,8 @@ class AppModule(var context: Context) {
 
     @Provides
     @Singleton
-    fun provideMainRepo(database: CountriesDatabase, sharedPreferences: SharedPreferences, apiService: ApiService) = MainRepository(database, sharedPreferences, apiService)
+    fun provideMainRepo(database: CountriesDatabase, sharedPreferences: SharedPreferences, apiCallWrapper: ApiCallWrapper) =
+        MainRepository(database, sharedPreferences, apiCallWrapper)
 
     @Provides
     @Singleton
@@ -33,4 +35,8 @@ class AppModule(var context: Context) {
     @Provides
     @Singleton
     fun provideApiService(): ApiService = RetrofitInstance.apiService
+
+    @Provides
+    @Singleton
+    fun provideApiCallWrapper(apiService: ApiService): ApiCallWrapper = ApiCallWrapper(apiService)
 }
