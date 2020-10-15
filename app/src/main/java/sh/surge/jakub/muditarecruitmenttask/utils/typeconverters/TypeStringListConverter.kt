@@ -1,4 +1,4 @@
-package sh.surge.jakub.muditarecruitmenttask.utils
+package sh.surge.jakub.muditarecruitmenttask.utils.typeconverters
 
 import androidx.room.TypeConverter
 import com.google.gson.Gson

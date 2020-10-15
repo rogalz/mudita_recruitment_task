@@ -12,8 +12,7 @@ class MuditaApp : Application() {
 
     private fun setupTimber() {
         Timber.plant(object : Timber.DebugTree() {
-            override fun createStackElementTag(element: StackTraceElement) =
-                element.className + " " + element.lineNumber + " ***:"
+            override fun createStackElementTag(element: StackTraceElement) = element.className + " " + element.lineNumber + " ***:"
         })
     }
 }

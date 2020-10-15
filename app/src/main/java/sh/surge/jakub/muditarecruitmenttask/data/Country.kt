@@ -4,8 +4,8 @@ import androidx.annotation.Keep
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import sh.surge.jakub.muditarecruitmenttask.utils.TypeCurrencyConverter
-import sh.surge.jakub.muditarecruitmenttask.utils.TypeStringListConverter
+import sh.surge.jakub.muditarecruitmenttask.utils.typeconverters.TypeCurrencyConverter
+import sh.surge.jakub.muditarecruitmenttask.utils.typeconverters.TypeStringListConverter
 
 @Keep
 @Entity(tableName = "countries")

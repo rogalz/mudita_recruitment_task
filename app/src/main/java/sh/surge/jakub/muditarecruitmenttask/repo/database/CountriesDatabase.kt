@@ -1,4 +1,4 @@
-package sh.surge.jakub.muditarecruitmenttask
+package sh.surge.jakub.muditarecruitmenttask.repo.database
 
 import android.content.Context
 import androidx.room.Database
@@ -21,11 +21,6 @@ abstract class CountriesDatabase : RoomDatabase() {
             return INSTANCE as CountriesDatabase
         }
 
-        private fun init(context: Context): CountriesDatabase =
-            Room.databaseBuilder(
-                context.applicationContext,
-                CountriesDatabase::class.java,
-                "Database"
-            ).build()
+        private fun init(context: Context): CountriesDatabase = Room.databaseBuilder(context.applicationContext, CountriesDatabase::class.java, "Database").build()
     }
 }
