@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".countrieslistfragment.ListFragment">
+
+    <TextView
+        android:id="@+id/screeTitleList"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/countriesList"
+        android:textSize="@dimen/largeTextSize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/countriesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/smallSpace"
+        android:paddingEnd="@dimen/smallSpace"
+        android:paddingBottom="@dimen/smallSpace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screeTitleList"
+        tools:listitem="@layout/item_recyler_country" />
+</androidx.constraintlayout.widget.ConstraintLayout>

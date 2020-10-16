@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Mudita recruitment task</string>
+    <string name="appAuthor">Jakub Rogala</string>
+    <string name="splashDescription">Recruitment task</string>
+    <string name="starting_station">Starting station</string>
+    <string name="destination">Destination</string>
+    <string name="you_are_offline">You are offline</string>
+    <string name="the_distance_is">The distance is:</string>
+    <string name="splashAppName">Countries</string>
+    <string name="countriesList">List of countries</string>
+    <string name="somethingWentWrong">Something went wrong</string>
+    <string name="httpErrorOccurred">HTTP Error Occurred</string>
+    <string name="connectionError">Connection error occurred</string>
+    <string name="callingCodes">Calling codes: </string>
+    <string name="countryDomains">Country domain: </string>
+    <string name="currencies">Currencies: </string>
 </resources>
