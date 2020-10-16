@@ -1,10 +1,5 @@
 package sh.surge.jakub.muditarecruitmenttask.splashfragment
 
-import android.content.Context
-import android.net.ConnectivityManager
-import android.net.Network
-import android.net.NetworkCapabilities
-import android.net.NetworkRequest
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment

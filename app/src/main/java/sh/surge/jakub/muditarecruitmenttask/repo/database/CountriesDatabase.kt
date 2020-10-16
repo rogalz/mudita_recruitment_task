@@ -10,7 +10,7 @@ import sh.surge.jakub.muditarecruitmenttask.data.CountryDao
 @Database(entities = [Country::class], version = 1)
 abstract class CountriesDatabase : RoomDatabase() {
 
-    abstract fun currencyDao(): CountryDao
+    abstract fun countryDao(): CountryDao
 
     companion object {
         @Volatile

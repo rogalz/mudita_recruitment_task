@@ -6,4 +6,12 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
+
+    <style name="CountryDetails">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/smallSpace</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:textColor">@color/itemRecyclerDetailsTextColor</item>
+    </style>
 </resources>

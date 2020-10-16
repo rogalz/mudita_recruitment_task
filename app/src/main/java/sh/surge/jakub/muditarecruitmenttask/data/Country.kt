@@ -15,6 +15,5 @@ data class Country(
     val name: String,
     val currencies: List<Currency>,
     val callingCodes: List<String>,
-    val topLevelDomain: List<String>,
-    val flag: String
+    val topLevelDomain: List<String>
 )

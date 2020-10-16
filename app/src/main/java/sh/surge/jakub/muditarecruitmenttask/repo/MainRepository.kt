@@ -1,6 +1,7 @@
 package sh.surge.jakub.muditarecruitmenttask.repo
 
 import android.content.SharedPreferences
+import androidx.lifecycle.LiveData
 import sh.surge.jakub.muditarecruitmenttask.data.Country
 import sh.surge.jakub.muditarecruitmenttask.repo.database.CountriesDatabase
 import sh.surge.jakub.muditarecruitmenttask.repo.network.ApiCallWrapper
@@ -14,6 +15,7 @@ class MainRepository @Inject constructor(
     private var apiCallWrapper: ApiCallWrapper
 ) {
 
+    val allCountries: LiveData<List<Country>> = database.countryDao().getAll()
     private val currentTime = System.currentTimeMillis()
 
     val shouldDownloadData: Boolean
@@ -37,6 +39,6 @@ class MainRepository @Inject constructor(
 
     fun insertCountries(data: List<Country>) {
         updateSharedPref(currentTime)
-        database.currencyDao().insertAll(data)
+        database.countryDao().insertAll(data)
     }
 }

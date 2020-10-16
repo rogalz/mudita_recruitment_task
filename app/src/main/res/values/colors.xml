@@ -4,5 +4,8 @@
     <color name="colorPrimaryDark">#0068a6</color>
     <color name="colorAccent">#68c6ff</color>
     <color name="textColor">#CCFFFFFF</color>
+    <color name="itemRecyclerBackgroundColor">#BAFFFFFF</color>
+    <color name="itemRecyclerDetailsTextColor">#F8474747</color>
+    <color name="itemRecyclerNameTextColor">#F82E2E2E</color>
     <color name="white">#FFFFFF</color>
 </resources>

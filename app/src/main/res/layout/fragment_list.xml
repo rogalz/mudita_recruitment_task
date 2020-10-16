@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".countrieslistfragment.ListFragment">
 
     <TextView
         android:id="@+id/screeTitleList"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="56dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/countriesList"
@@ -17,10 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/countriesRecycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/smallSpace"
-        android:padding="@dimen/smallSpace"
+        android:paddingStart="@dimen/smallSpace"
+        android:paddingEnd="@dimen/smallSpace"
+        android:paddingBottom="@dimen/smallSpace"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/screeTitleList" />
+        app:layout_constraintTop_toBottomOf="@id/screeTitleList"
+        tools:listitem="@layout/item_recyler_country" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,4 +11,7 @@
     <string name="somethingWentWrong">Something went wrong</string>
     <string name="httpErrorOccurred">HTTP Error Occurred</string>
     <string name="connectionError">Connection error occurred</string>
+    <string name="callingCodes">Calling codes: </string>
+    <string name="countryDomains">Country domain: </string>
+    <string name="currencies">Currencies: </string>
 </resources>
